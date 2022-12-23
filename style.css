@@ -94,12 +94,15 @@ div.content > * {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-form {
-  font-family: monofonto;
-  font-weight: bold;
+form{
   display:grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
+}
+
+form > * > label {
+  font-family: monofonto;
+  font-weight: bold;
 }
 
 .form-row {
@@ -145,5 +148,28 @@ form {
 
 a {
   color:#596D48;
-  font-weight: bold;;
+  font-weight: bold;
 }
+
+a:hover {
+  cursor: pointer;
+}
+
+.form-row > input.invalid {
+  border-color: red;
+}
+
+#invalid {
+  color: red;
+}
+
+#btn:hover {
+  background-color: #8ba873;
+  cursor: pointer;
+}
+
+#btn:active {
+  background-color: #596D48;
+}
+
+

@@ -28,10 +28,10 @@
     <div class="paragraph">You <em>know</em> you want to.</div>
     <div class="form">
       <div class="paragraph">Let's do this!</div>
-      <form action="" method="get" class="speaker-form">
+      <form action="" method="get" class="speaker-form" id="myForm" onsubmit="return submitForm()">
         <div class="form-row">
           <label for="first-name">First Name</label>
-          <input id="first-name" name="firstl-name" type="text" placeholder="Jane" required/>
+          <input id="first-name" name="first-name" type="text" placeholder="Jane" required/>
         </div>
         <div class="form-row">
           <label for="last-name">Last Name</label>
@@ -58,7 +58,7 @@
         </div>
       </form>
     </div>
-    <button id="btn">Create Account</button>
+    <button id="btn" form="myForm">Create Account</button>
     <div class="login">Already have an account? <a>Log in</a></div>
   </div> 
 </body>
