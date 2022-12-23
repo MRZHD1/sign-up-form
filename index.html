@@ -21,6 +21,45 @@
       </div>
     </div>
   </div>
-  <div class="content"></div> 
+  <div class="content">
+    <div class="paragraph">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+      Sign up <em>now</em> to get started.
+    </div>
+    <div class="paragraph">You <em>know</em> you want to.</div>
+    <div class="form">
+      <div class="paragraph">Let's do this!</div>
+      <form action="" method="get" class="speaker-form">
+        <div class="form-row">
+          <label for="first-name">First Name</label>
+          <input id="first-name" name="firstl-name" type="text" placeholder="Jane" required/>
+        </div>
+        <div class="form-row">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" name="last-name" type="text" placeholder="Doe"/>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email"
+                 name="email"
+                 type="email"
+                 placeholder="joe@example.com" required/>
+        </div>
+        <div class="form-row">
+          <label for="phone">Enter your phone number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder = "000-000-000">
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-row">
+          <label for="confirm-pass">Confirm Password</label>
+          <input type="password" id="confirm-pass" name="confirm-pass" required>
+        </div>
+      </form>
+    </div>
+    <button id="btn">Create Account</button>
+    <div class="login">Already have an account? <a>Log in</a></div>
+  </div> 
 </body>
 </html>

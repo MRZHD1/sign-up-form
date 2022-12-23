@@ -8,6 +8,11 @@
   src: url("lib/Norse-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: monofonto;
+  src: url("lib/MoongladeDemoBold-jOzM.ttf") format("opentype");
+}
+
 body {
   display:flex;
   flex-direction: row;
@@ -61,4 +66,84 @@ div.side {
 
 div.content {
   width: 70%;
+  padding-top: 5%;
+}
+
+div.content > * {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.paragraph {
+  font-size: 20px;
+  padding-bottom: 3%;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.paragraph:last-of-type {
+  margin-top: 5%;
+}
+
+.form {
+  padding-right: 20%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.form > .paragraph {
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+form {
+  font-family: monofonto;
+  font-weight: bold;
+  display:grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row > input {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 90%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+}
+
+#btn {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding-left:60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width:250px;
+  margin-left: 10%;
+  margin-top: 30px;
+  background-color: #596D48; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+a {
+  color:#596D48;
+  font-weight: bold;;
 }
